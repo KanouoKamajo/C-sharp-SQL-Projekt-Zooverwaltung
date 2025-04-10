@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\MainWindow.g.cs
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\App.g.cs
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung_MarkupCompile.cache
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung_MarkupCompile.lref
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\bin\Debug\Zooverwaltung.exe.config
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\bin\Debug\Zooverwaltung.exe
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\bin\Debug\Zooverwaltung.pdb
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\MainWindow.baml
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.g.resources
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.Properties.Resources.resources
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.exe
+C:\Users\PC\source\repos\Zooverwaltung\Zooverwaltung\obj\Debug\Zooverwaltung.pdb
