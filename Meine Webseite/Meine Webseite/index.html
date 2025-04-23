@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josiane Kanouo – Bewerbungsseite</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  
+  
+
+  <!-- Eigene CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#start" class="nav-logo">Josiane</a>
+      <div class="burger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#cv">Lebenslauf</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Startbereich -->
+ <!-- STARTBEREICH -->
+<section id="start" class="hero-section">
+    <div class="hero-content">
+      <img src="images/profilbild.jpg" alt="Profilbild von Josiane" class="hero-img" />
+      <h1>Hallo, ich bin <span class="name">Josiane Kanouo Maneyo</span></h1>
+      <p class="typing-text">Ich bin <span id="typed"></span></p>
+      <p class="motto">💡 Code mit Herz. Design mit Verstand.</p>
+  
+      <!-- Button: Über mich & Vision anzeigen -->
+      <div class="button-group-center">
+        <button onclick="showExclusiveSection('about-vision')">👁 Über mich & Vision</button>
+      </div>
+  
+      <!-- Versteckte Über mich + Vision Sektion (animiert) -->
+      <div id="about-vision" class="start-row" style="display: none;">
+        <div class="info-box" data-aos="fade-right">
+          <h3>💼 Über mich</h3>
+          <p><strong>🎓 Ausbildung:</strong> Umschulung zur Fachinformatikerin</p>
+          <p><strong>💻 Skills:</strong> C#, Java, Web, SQL, Testing</p>
+          <p><strong>🌍 Sprachen:</strong> Deutsch, Französisch, Englisch, Spanisch</p>
+        </div>
+  
+        <div class="info-box" data-aos="fade-left">
+          <h3>🌟 Meine Vision</h3>
+          <p>Ich will moderne Software entwickeln, die Menschen hilft – verständlich, barrierefrei und schön. Ich lerne täglich, wachse mit Herausforderungen und liebe kreative Lösungen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- ZENTRIERTE BUTTON-GRUPPE -->
+<div class="button-group-center">
+    <button onclick="showExclusiveSection('skills')">🌟 Soft Skills anzeigen</button>
+    <button onclick="showExclusiveSection('certificates')">📄 Zertifikate anzeigen</button>
+    <button onclick="showExclusiveSection('references')">💬 Empfehlung anzeigen</button>
+    <button onclick="showExclusiveSection('feedback')">📝 Feedback geben</button>
+    <button onclick="showExclusiveSection('long-about')">🧾 Ausführlicher Text über mich</button>
+  </div>
+  
+  <!-- INFOBEREICHE (alle anfangs versteckt) -->
+  
+  <section id="skills" style="display: none;" data-aos="fade-up">
+    <h2>Soft Skills</h2>
+    <ul class="checklist">
+      <li>✅ Lernbereitschaft</li>
+      <li>✅ Kommunikationsstärke</li>
+      <li>✅ Teamgeist</li>
+      <li>✅ Empathie</li>
+      <li>✅ Verantwortungsbewusstsein</li>
+    </ul>
+  </section>
+  
+  <section id="certificates" style="display: none;" data-aos="fade-up">
+    <h2>Zertifikate & Schulungen</h2>
+    <ul>
+      <li><a href="files/zertifikat-csharp.pdf" target="_blank">C# Grundlagen (Udemy)</a></li>
+      <li><a href="files/zertifikat-ux.pdf" target="_blank">UX/UI Design</a></li>
+      <li><a href="files/zertifikat-testing.pdf" target="_blank">Software Testing</a></li>
+    </ul>
+  </section>
+  
+  <section id="references" style="display: none;" data-aos="fade-up">
+    <h2>Was andere über mich sagen</h2>
+    <blockquote>
+      „Josiane ist unglaublich lernbereit und engagiert. Sie geht strukturiert und kreativ an jede Aufgabe heran.“<br>
+      <strong>– Ausbildungscoach</strong>
+    </blockquote>
+  </section>
+  
+  <section id="feedback" style="display: none;" data-aos="fade-up">
+    <h2>Wie hat Ihnen meine Seite gefallen?</h2>
+    <textarea placeholder="Ihre Rückmeldung ..." rows="4"></textarea><br><br>
+    <button>Feedback senden</button>
+  </section>
+  
+  <section id="long-about" style="display: none;" data-aos="fade-up">
+    <div class="zitat-box">
+      <p class="zitat-text">
+        „Ich heiße Josiane Kanouo Maneyo und mache derzeit eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung.<br><br>
+        Besonders interessiere ich mich für die Programmierung mit C# und Java sowie für Webentwicklung, Softwaredesign mit UML, Testing und Datenbanken.<br><br>
+        Ich habe eine große Leidenschaft für die Entwicklung moderner Softwarelösungen und Webseiten entwickelt.  
+        Ich bin engagiert, motiviert und lernbereit – und wachse gerne an neuen Herausforderungen.“
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Soft Skills -->
+  <section id="skills" style="display: none;">
+    <h2>Soft Skills</h2>
+    <ul class="checklist">
+      <li>✅ Lernbereitschaft</li>
+      <li>✅ Hochmotiviert</li>
+      <li>✅ Kommunikationsstärke</li>
+      <li>✅ Teamgeist</li>
+      <li>✅ Empathie</li>
+      <li>✅ Verantwortungsbewusstsein</li>
+    </ul>
+  </section>
+
+  <!-- Zertifikate -->
+  <section id="certificates" style="display: none;">
+    <h2>Zertifikate & Schulungen</h2>
+    <ul>
+      <li><a href="files/zertifikat-csharp.pdf" target="_blank">C# Grundlagen (Udemy)</a></li>
+      <li><a href="files/zertifikat-ux.pdf" target="_blank">UX/UI Design</a></li>
+      <li><a href="files/zertifikat-testing.pdf" target="_blank">Software Testing</a></li>
+    </ul>
+  </section>
+
+  <!-- Empfehlung -->
+  <section id="references" style="display: none;">
+    <h2>Was andere über mich sagen</h2>
+    <blockquote>
+      „Josiane ist unglaublich lernbereit und engagiert. Sie geht strukturiert und kreativ an jede Aufgabe heran.“<br>
+      <strong>– Ausbildungscoach</strong>
+    </blockquote>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback" style="display: none;">
+    <h2>Wie hat Ihnen meine Seite gefallen?</h2>
+    <textarea placeholder="Ihre Rückmeldung ..."></textarea><br><br>
+    <button>Feedback senden</button>
+  </section>
+
+  <!-- Lebenslauf -->
+  <section id="cv" class="timeline-section">
+    <h2 data-aos="fade-up"><i class="bi bi-clock-history"></i> Lebenslauf</h2>
+  
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2024 – heute</h3>
+          <p>Umschulung zur Fachinformatikerin – Anwendungsentwicklung</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2016</h3>
+          <p>Master of Arts / Kommunikation und Fremdsprachen – Universität Siegen</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2009</h3>
+          <p>Bachelor / Linguistik – Universität Yaoundé I</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2006</h3>
+          <p>Abitur / Fachhochschulreife</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- PDF-Download-Button -->
+    <div class="cv-button" data-aos="fade-up" data-aos-delay="500">
+      <a href="files/Lebenslauf_Kanouo_.pdf" target="_blank" download>
+        <button><i class="bi bi-cloud-arrow-down-fill"></i> Lebenslauf als PDF herunterladen</button>
+      </a>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Projekte -->
+  <section id="projects">
+    <div>
+      <h2>Meine Projekte</h2>
+
+      <div class="projekt-box csharp">
+        <img src="images/zoo.png" alt="Zoo-Projekt" class="projekt-bild" />
+        <h3>Zoo-Verwaltung (C# + SQL)</h3>
+        <p>Desktop-Anwendung zur Verwaltung von Zootieren und Gehegen mit Datenbankanbindung.</p>
+        <a href="https://github.com/KanouoKamajo/C-sharp-SQL-Projekt-Zooverwaltung" target="_blank">🔗 Zum GitHub-Projekt</a>
+      </div>
+
+      <div class="projekt-box uxui">
+        <img src="images/storeme.png" alt="UX Design" class="projekt-bild" />
+        <h3>StoreMe-App-UX-UI-design</h3>
+        <p>Benutzeroberfläche für eine Lager-App mit Fokus auf Nutzerführung und Design.</p>
+        <a href="https://github.com/KanouoKamajo/StoreMe-App-UX-UI-design" target="_blank">🔗 Zum GitHub-Projekt</a>
+      </div>
+
+      <div class="projekt-box java">
+        <img src="images/uml.png" alt="UML Java Projekt" class="projekt-bild" />
+        <h3>UML-OOP-Projekt-Java</h3>
+        <p>Java-Projekt zur Anwendung objektorientierter Prinzipien mit UML-Modellierung.</p>
+        <a href="https://github.com/KanouoKamajo/UML-OOP-Projekt-Java" target="_blank">🔗 Zum GitHub-Projekt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <div>
+      <h2><i class="bi bi-envelope-fill"></i> Kontakt</h2>
+      <form action="https://formspree.io/f/mldjqadl" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">E-Mail:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Nachricht:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
+  </section>
+  <!-- Kontaktlinks-Sektion -->
+<section class="kontakt-links">
+    <h3>Weitere Kontaktmöglichkeiten</h3>
+    <div class="kontakt-icons">
+      <a href="https://github.com/KanouoKamajo" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/josiane-kanouo-maneyo-145112327/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="kanouoj3@gmail.com"><i class="bi bi-envelope"></i></a>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Josiane Kanouo Maneyo – Alle Rechte vorbehalten</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({
+    duration: 800, // Dauer der Animation (ms)
+    once: true     // Animation nur beim ersten Scroll
+  });</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: [
+        "Webentwicklerin 💻",
+        "C# Entwicklerin ⚙️",
+        "UX/UI Designerin 🎨",
+        "SQL & Datenbank-Fan 🗂️",
+        "Testing-Begeisterte 🧪"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true
+    });
+     
+
+  </script>
+</body>
+</html>
